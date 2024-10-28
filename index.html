@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand section-title m-0">Dawn Bakery</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-md-flex d-sm-block">
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link " href="#sobre-a-padaria">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre o restaurante
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#destaque">
+                            <i class="bi bi-calendar-check"></i>
+                            Destaques 
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#cardapio">
+                            <i class="bi bi-card-text"></i>
+                            Nosso cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#fale-conosco">
+                            <i class="bi bi-chat-left-text"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-targe="cabecalho" data-bs-smooth-scroll="true" >
+        <section id="sobre-a-padaria">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img width="100%" height="760" src="https://images.unsplash.com/photo-1511018556340-d16986a1c194?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  alt="Foto do espaço interno do restaurante">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img width="100%" height="760px" src="https://images.unsplash.com/photo-1454641350786-bc31a1997ba9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Duas taças de vinho">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img width="100%" height="760px" src="https://images.unsplash.com/photo-1556742059-47b93231f536?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Uma mesa com comida">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button class="active" type="button" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+    
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img height="360px" src="https://images.unsplash.com/photo-1536782896453-61d09f3aaf3e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100 rounded" alt="Foto do espaço interno do restaurante">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">a padaria</span></h2>
+                            <p>
+                                Nossa padaria é um espaço acolhedor, dedicado a trazer o melhor da panificação artesanal para você. Cada pão e doce é feito com ingredientes selecionados e carinho, seguindo receitas tradicionais e toques especiais. Acreditamos que a simplicidade de um pão bem-feito e o aroma de produtos frescos fazem toda a diferença. 
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
+                            <p>
+                                Com um ambiente convidativo e aromas irresistíveis, nossa padaria é o lugar perfeito para uma pausa tranquila ou para encontros com amigos e família. Entre mesas aconchegantes e uma decoração acolhedora, proporcionamos uma experiência única, onde cada visita é uma celebração ao sabor e à tradição.
+                            </p>
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="destaque" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Destaques <span class="text-colored">do dia</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img height="236px" src="https://plus.unsplash.com/premium_photo-1692809723031-98c72b1871c7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100 rounded mb-2" alt="foto de bolo de aniversário">
+                        <h3 class="section-title text-colored fs-4">
+                            Croissant
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit, voluptas ipsam illum alias dignissimos eum reiciendis eius qui consequuntur necessitatibus dolores illo aut accusantium quo nobis soluta quasi veritatis.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img height="236px" src="https://images.unsplash.com/photo-1476887334197-56adbf254e1a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100 rounded mb-2" alt="Foto de mesa de festa de casamento">
+                        <h3 class="section-title text-colored fs-4">
+                            Tortas
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis doloribus ipsa temporibus quis consequatur. Odit voluptatum, non rerum cupiditate dignissimos nostrum qui odio. Atque fuga dolore non nam quam ut!
+                        </p>  
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://images.unsplash.com/photo-1525426996102-52becb48ee14?q=80&w=2054&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100 rounded mb-2" alt="Foto de brinde de confraternização">
+                        <h3 class="section-title text-colored fs-4">
+                            Hamburguer
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis reprehenderit minima pariatur dolor commodi praesentium minus nam, ex voluptatum similique necessitatibus placeat ipsum eum dolorum sunt. Reprehenderit corporis officiis molestias!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cardapio" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        Nosso <span class="text-colored">cardápio</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav  class="nav nav-pills flex-collumn d-block nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-sem-alcool" class="fw-bold text-start nav-link text-colored active">Sanduiches</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-alcolicas" class="fw-bold text-start nav-link text-colored">Salgados</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="fw-bold text-start nav-link text-colored">Doces</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais" class="fw-bold text-start nav-link text-colored">Pães</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="fw-bold text-start nav-link text-colored">Bebidas</button>    
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="bebidas-sem-alcool">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://plus.unsplash.com/premium_photo-1675252371648-7a6481df8226?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Coca-cola">
+                                        <h5 class="text-colored mt-2 fw-bold">Hamburguer</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://plus.unsplash.com/premium_photo-1675252371648-7a6481df8226?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Suco">
+                                        <h5 class="text-colored mt-2 fw-bold">Hamburguer</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://plus.unsplash.com/premium_photo-1675252371648-7a6481df8226?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Coca-cola">
+                                        <h5 class="text-colored mt-2 fw-bold">Hamburguer</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://plus.unsplash.com/premium_photo-1675252371648-7a6481df8226?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Coca-cola">
+                                        <h5 class="text-colored mt-2 fw-bold">Hamburguer</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://plus.unsplash.com/premium_photo-1675252371648-7a6481df8226?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Coca-cola">
+                                        <h5 class="text-colored mt-2 fw-bold">Hamburguer</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://plus.unsplash.com/premium_photo-1675252371648-7a6481df8226?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Coca-cola">
+                                        <h5 class="text-colored mt-2 fw-bold">Hamburguer</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="bebidas-alcolicas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://salgadosparavender.com.br/wp-content/uploads/2024/05/coxinha-para-vender.jpg" alt="cerveja">
+                                        <h5 class="text-colored mt-2 fw-bold">Coxinha</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://salgadosparavender.com.br/wp-content/uploads/2024/05/coxinha-para-vender.jpg" alt="Vinho">
+                                        <h5 class="text-colored mt-2 fw-bold">Coxinha</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="entradas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://images.unsplash.com/photo-1508737804141-4c3b688e2546?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="177px" alt="Nome da entrada">
+                                        <h5 class="text-colored mt-2 fw-bold">Bolo de chocolate</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://images.unsplash.com/photo-1508737804141-4c3b688e2546?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="177px" alt="Nome da entrada">
+                                        <h5 class="text-colored mt-2 fw-bold">Bolo de chocolate</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://images.unsplash.com/photo-1508737804141-4c3b688e2546?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="177px" alt="Nome da entrada">
+                                        <h5 class="text-colored mt-2 fw-bold">Bolo de chocolate</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://images.unsplash.com/photo-1508737804141-4c3b688e2546?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="177px" alt="Nome da entrada">
+                                        <h5 class="text-colored mt-2 fw-bold">Bolo de chocolate</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="pratos-principais">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://s2-receitas.glbimg.com/-V4nFrbjz9JMuWJnvQxl2NEplg8=/0x0:1280x922/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/U/q/B5doHYQcKDxm0YsOynPA/pao-frances.jpeg" alt="Pizza">
+                                        <h5 class="text-colored mt-2 fw-bold">Pão de sal</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://static.itdg.com.br/images/640-400/e042b00163924cf84a93beafd7cea653/354060-original.jpg" height="156px" alt="Salmão">
+                                        <h5 class="text-colored mt-2 fw-bold">Pão de leite</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://s2-receitas.glbimg.com/-V4nFrbjz9JMuWJnvQxl2NEplg8=/0x0:1280x922/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/U/q/B5doHYQcKDxm0YsOynPA/pao-frances.jpeg" alt="Pizza">
+                                        <h5 class="text-colored mt-2 fw-bold">Pão de sal</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://static.itdg.com.br/images/640-400/e042b00163924cf84a93beafd7cea653/354060-original.jpg" height="156px" alt="Salmão">
+                                        <h5 class="text-colored mt-2 fw-bold">Pão de leite</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://s2-receitas.glbimg.com/-V4nFrbjz9JMuWJnvQxl2NEplg8=/0x0:1280x922/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/U/q/B5doHYQcKDxm0YsOynPA/pao-frances.jpeg" alt="Pizza">
+                                        <h5 class="text-colored mt-2 fw-bold">Pão de sal</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://static.itdg.com.br/images/640-400/e042b00163924cf84a93beafd7cea653/354060-original.jpg" height="156px" alt="Salmão">
+                                        <h5 class="text-colored mt-2 fw-bold">Pão de leite</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="sobremesas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="140px" alt="Bolo de chocolate">
+                                        <h5 class="text-colored mt-2 fw-bold">Suco de laranja</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://images.unsplash.com/photo-1621263764928-df1444c5e859?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="140px" alt="cupcake">
+                                        <h5 class="text-colored mt-2 fw-bold">Suco de limão</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu E-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu Telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Seu nome</label>
+                                <textarea class="form-control"  id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes Sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi text-colored bi-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi text-colored bi-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi text-colored bi-whatsapp"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua teste exemplo nº 145, Bairro bootstrap - São Paulo - SP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
